@@ -2,6 +2,7 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const axios = require("axios");
 const generateHTML = require("./generateHTML");
+const pdf = require("html-pdf");
 
 function promptUser() {
   return inquirer.prompt([
@@ -52,7 +53,6 @@ promptUser().then(function({ username, color }) {
   const starredUrl = `https://api.github.com/users/${username}/starred`;
 
   axios.get(queryUrl).then(function(res) {
-    console.log(res.data);
     const name = res.data.name;
     const imageUrl = res.data.avatar_url;
     const username = res.data.login;
@@ -81,7 +81,6 @@ promptUser().then(function({ username, color }) {
         starred,
         color
       );
-      console.log(user);
       const html = generateHTML(user);
       fs.writeFile("resume.html", html, err => {
         if (err) {
@@ -89,13 +88,19 @@ promptUser().then(function({ username, color }) {
         } else {
           console.log("Searching...");
         }
+
+        const readFile = fs.readFileSync("./resume.html", "utf8");
+        const options = { format: "Letter" };
+        pdf
+          .create(readFile, options)
+          .toFile("./resume.pdf", function(err, res) {
+            if (err) {
+              return console.log(err);
+            } else {
+              console.log("Your dev resume is complete.");
+            }
+          });
       });
     });
   });
 });
-
-// function writeToFile(fileName, data) {}
-
-// function init() {}
-
-// init();

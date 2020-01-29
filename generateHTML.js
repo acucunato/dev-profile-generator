@@ -131,7 +131,7 @@ function generateHTML(user) {
           border-radius: 50%;
           object-fit: cover;
           margin-top: -75px;
-          border: 6px soild ${colors[user.color].photoBorderColor};
+          border: 6px solid ${colors[user.color].photoBorderColor};
           box-shadow: rgba(0, 0, 0, 0.3) 4px 1px 20px 4px;
         }
         .photo-header h1,
@@ -204,7 +204,7 @@ function generateHTML(user) {
         <div class="photo-header">
           <img src="${user.imageUrl}" />
           <h1>Hi!</h1>
-          <h2>My name is ${user.name}</h2>
+          <h2>My name is ${user.name}!</h2>
           <div class="links-nav">
             <a href="https://www.google.com/maps/place/${
               user.location
