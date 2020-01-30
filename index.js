@@ -90,7 +90,7 @@ promptUser().then(function({ username, color }) {
         }
 
         const readFile = fs.readFileSync("./resume.html", "utf8");
-        const options = { format: "Tabloid" };
+        const options = { format: "a3", orientation: "portrait" };
         pdf.create(readFile, options).toFile("./resume.pdf", err => {
           if (err) {
             return console.log(err);

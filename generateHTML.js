@@ -34,12 +34,6 @@ function generateHTML(user) {
       <meta http-equiv="X-UA-Compatible" content="ie=edge" />
       <link
         rel="stylesheet"
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-        crossorigin="anonymous"
-      />
-      <link
-        rel="stylesheet"
         href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       />
       <link
@@ -52,11 +46,13 @@ function generateHTML(user) {
           margin: 0;
           
         }
+        
         *,
         *::after,
         *::before {
           box-sizing: border-box;
         }
+
         html,
         body {
           padding: 0;
@@ -192,12 +188,12 @@ function generateHTML(user) {
           color: inherit;
           font-weight: bold;
         }
-  
+
         @media print {
-          body {
-            zoom: 0.75;
+            body {
+              zoom: 0.75;
+            }
           }
-        }
       </style>
     </head>
     <body>
@@ -222,23 +218,19 @@ function generateHTML(user) {
         </div>
         <main>
           <div class="container">
-            <h3 class="bio">${user.bio}</h3>
+            <h4 class="bio">${user.bio}</h4>
   
             <div class="row">
               <div class="col">
                 <div class="card">
                   <h3>Public Repositories</h3>
-                  <div class="card-body">
                     <h5 class="card-title">${user.repo}</h5>
-                  </div>
                 </div>
               </div>
               <div class="col">
                 <div class="card">
                   <h3>Followers</h3>
-                  <div class="card-body">
                     <h5 class="card-title">${user.followers}</h5>
-                  </div>
                 </div>
               </div>
             </div>
@@ -246,23 +238,18 @@ function generateHTML(user) {
               <div class="col">
                 <div class="card">
                   <h3>GitHub Stars</h3>
-                  <div class="card-body">
                     <h5 class="card-title">${user.starred}</h5>
-                  </div>
                 </div>
               </div>
               <div class="col">
                 <div class="card">
                   <h3>Following</h3>
-                  <div class="card-body">
                     <h5 class="card-title">${user.following}</h5>
-                  </div>
                 </div>
               </div>
             </div>
           </div>
         </main>
-        <div class="wrapper"></div>
       </div>
     </body>
   </html>
