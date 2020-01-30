@@ -90,16 +90,14 @@ promptUser().then(function({ username, color }) {
         }
 
         const readFile = fs.readFileSync("./resume.html", "utf8");
-        const options = { format: "Letter" };
-        pdf
-          .create(readFile, options)
-          .toFile("./resume.pdf", function(err, res) {
-            if (err) {
-              return console.log(err);
-            } else {
-              console.log("Your dev resume is complete.");
-            }
-          });
+        const options = { format: "Tabloid" };
+        pdf.create(readFile, options).toFile("./resume.pdf", err => {
+          if (err) {
+            return console.log(err);
+          } else {
+            console.log("Your resume is complete.");
+          }
+        });
       });
     });
   });
