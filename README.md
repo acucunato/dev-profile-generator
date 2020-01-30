@@ -14,25 +14,29 @@ When preparing a report for stakeholders, it is important to have up-to-date inf
 
 ## Utilizing the App
 
-- The user will be prompted for a favorite color, which will be used as the background color for cards.
+- The user will be prompted for their GitHub username.
+
+- The user will be prompted for a favorite color, which will be used as the color for their pdf.
 
 - The PDF will be populated with the following:
 
-* Profile image
-* User name
-* Links to the following:
-  - User location via Google Maps
-  - User GitHub profile
-  - User blog
-* User bio
-* Number of public repositories
-* Number of followers
-* Number of GitHub stars
-* Number of users following
+  - Profile image
+  - User name
+  - Links to the following:
+
+    - User location via Google Maps
+    - User GitHub profile
+    - User blog
+
+  - User bio
+  - Number of public repositories
+  - Number of followers
+  - Number of GitHub stars
+  - Number of users following
 
 ## Demo
 
-![Weather Dashboard Image]("Weather Dashboard")
+![Weather Dashboard Image](./giphy "Weather Dashboard")
 
 ## Tech used
 
@@ -41,7 +45,7 @@ When preparing a report for stakeholders, it is important to have up-to-date inf
 - Bootstrap
 - Javascript
 - Node.js
-- NPM _inquirer, axios, html-pdf_
+- NPM - _inquirer, axios, html-pdf_
 
 ## Contributers
 
