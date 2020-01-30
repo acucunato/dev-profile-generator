@@ -218,7 +218,7 @@ function generateHTML(user) {
         </div>
         <main>
           <div class="container">
-            <h4 class="bio">${user.bio}</h4>
+            <h3 class="bio">${user.bio}</h3>
   
             <div class="row">
               <div class="col">

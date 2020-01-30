@@ -10,29 +10,15 @@ This application is a command-line application that dynamically generates a PDF 
 node index.js
 ```
 
-When preparing a report for stakeholders, it is important to have up-to-date information about members of the development team. Rather than navigating to each team member's GitHub profile, a command-line application will allow for quick and easy generation of profiles in PDF format.
+This command-line application will allow for quick and easy generation of developer profiles in PDF format.
 
 ## Utilizing the App
 
-- Open the `index.js` file in your terminal and run the command `npm i`, then run the command `node index.js`
+- The user will pen the `index.js` file in their terminal and run the command `npm i`, then run the command `node index.js`.
 
-- The user will be prompted for their GitHub username and a favorite color, which will be used as the color for their pdf.
+- The user will be prompted for their GitHub username and a favorite color, which will be used as the color for their PDF.
 
-- The PDF will be populated with the following:
-
-  - Profile image
-  - User name
-  - Links to the following:
-
-    - User location via Google Maps
-    - User GitHub profile
-    - User blog
-
-  - User bio
-  - Number of public repositories
-  - Number of followers
-  - Number of GitHub stars
-  - Number of users following
+- The PDF will be populated with the following: the users profile image & name, links to location via Google Maps, GitHub profile & user blog along with the user's GitHub page content such as: bio, number of public repositories, number of followers, number of GitHub stars, and number of users following.
 
 ## Demo
 
