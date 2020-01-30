@@ -14,9 +14,9 @@ When preparing a report for stakeholders, it is important to have up-to-date inf
 
 ## Utilizing the App
 
-- The user will be prompted for their GitHub username.
+- Open the `index.js` file in your terminal and run the command `npm i`, then run the command `node index.js`
 
-- The user will be prompted for a favorite color, which will be used as the color for their pdf.
+- The user will be prompted for their GitHub username and a favorite color, which will be used as the color for their pdf.
 
 - The PDF will be populated with the following:
 
