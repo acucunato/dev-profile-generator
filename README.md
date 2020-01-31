@@ -14,7 +14,7 @@ This command-line application will allow for quick and easy generation of develo
 
 ## Utilizing the App
 
-- The user will pen the `index.js` file in their terminal and run the command `npm i`, then run the command `node index.js`.
+- The user will open the `index.js` file in their terminal and run the command `npm i`, then run the command `node index.js`.
 
 - The user will be prompted for their GitHub username and a favorite color, which will be used as the color for their PDF.
 
@@ -22,7 +22,7 @@ This command-line application will allow for quick and easy generation of develo
 
 ## Demo
 
-![Weather Dashboard Image](./giphy "Weather Dashboard")
+![Developer Profile Generator](./img/dev-gen-demo.gif "Developer Profile Generator")
 
 ## Tech used
 
